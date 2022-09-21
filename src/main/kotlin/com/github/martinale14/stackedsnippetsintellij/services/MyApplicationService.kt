@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.martinale14.stackedsnippetsintellij.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.martinale14.stackedsnippetsintellij.MyBundle
 
 class MyApplicationService {
 
