@@ -17,7 +17,7 @@
 <!-- Plugin description -->
 # README
 
-![snippets in action](https://res.cloudinary.com/dhlvkhuhz/image/upload/v1663803339/personal/example_gatvab.gif)
+![snippets in action](https://res.cloudinary.com/dhlvkhuhz/image/upload/v1663806291/personal/example_intellij_plugin_clbskf.gif)
 
 A set of helpful Flutter and Dart snippets for day to day Flutter development.
 
