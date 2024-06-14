@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Flutter stacked">
+    <!--    AnimatedBuilder    -->
+
+    <template name="sbh" value="const SizedBox(height: $height$)," description="Creates a Sized Box with the given height" toReformat="false" toShortenFQNames="true">
+        <variable name="height" expression="&quot;height&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+    <template name="sbw" value="const SizedBox(width: $width$)," description="Creates a Sized Box with the given height" toReformat="false" toShortenFQNames="true">
+        <variable name="width" expression="&quot;width&quot;" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+    <template name="hookW" value="class $WidgetName$ extends HookViewModelWidget&lt;$ViewModel$&gt; {&#10;  const $WidgetName$({Key? key}) : super(key: key);&#10;&#10;  @override&#10;  Widget buildViewModelWidget(&#10;          BuildContext context, $ViewModel$ viewModel) =>&#10;      const SizedBox.shrink();&#10;}" description="Creates a Hook Widget with a ViewModel" toReformat="false" toShortenFQNames="true">
+        <variable name="WidgetName" expression="&quot;WidgetName&quot;" defaultValue="" alwaysStopAt="true" />
+        <variable name="ViewModel" expression="&quot;ViewModel&quot;" defaultValue="" alwaysStopAt="true" />
+
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+    <template name="sService" value="@lazySingleton&#10;class $ServiceName$ extends BaseReactiveService {&#10;&#10;  //TODO: Implement Service&#10; Constructor  @factoryMethod&#10;  $ServiceName$();&#10;}" description="Creates a Stacked Hooks Service" toReformat="false" toShortenFQNames="true">
+        <variable name="ServiceName" expression="&quot;ServiceName&quot;" defaultValue="" alwaysStopAt="true" />
+
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+
+    <template name="cDataS" value="part '$FILENAME$.chopper.dart';&#10;&#10;@ChopperApi()&#10;abstract class $DataSourceName$ extends ChopperService {&#10;&#10;  static _$$$DataSourceName$ create([ChopperClient? client]) =>&#10;      _$$$DataSourceName$(client);&#10;}" description="Creates a DataSource from Chopper Api" toReformat="false" toShortenFQNames="true">
+        <variable name="FILENAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="false" />
+        <variable name="DataSourceName" expression="&quot;DataSourceName&quot;" defaultValue="" alwaysStopAt="true" />
+
+        <context>
+            <option name="DART_STATEMENT" value="true" />
+        </context>
+    </template>
+</templateSet>
