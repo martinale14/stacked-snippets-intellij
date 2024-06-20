@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.martinale14.stackedsnippetsintellij"
-version = "1.0"
+version = "1.1"
 
 repositories {
     mavenCentral()
